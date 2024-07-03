@@ -1,0 +1,81 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+/* 
+#box{
+    height: 500px;
+    width: 500px;   
+    background-color: crimson;
+}
+
+/* vw ka mtlb hota h wo parent ko screen consider krega nd uske hisb se adjust krega */
+/* #inner{
+    height: 50vh;
+    width: 50vw;
+    background-color: royalblue;
+}
+
+h1{
+    font-size: 7vmin; 
+}*/
+
+
+/* vh -> viewport height */
+/* vw -> viewport width */
+/* vmax -> viewport maximum (height ke respect mein) */
+/* vmin -> viewport minimum (width ke respect mein)*/
+/* 1rem is equals to 16px */
+
+/* #parent{
+    background-color: #dadada;
+    width: 40%;
+    font-size: 30px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 1.5rem;
+} */
+
+/* .parent{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child1{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+}
+.child2{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+} */
+
+.box{
+    height: 300px;
+    width: 300px;
+    border: 5px solid #000;
+    background-color: crimson;
+}
+
+@media (max-width: 600px){
+    .box{
+        background-color: blue;
+        border-radius: 50%;
+    }
+}

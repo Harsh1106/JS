@@ -1,0 +1,52 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 50%;
+    /* transition-property: all;
+    transition-duration: 2s;
+    /* transition-timing-function: steps(5); 
+    transition-timing-function: ease-out;
+    transition-delay: 1s; */
+    /* shorthand technique */
+    /* transition: all 2s ease-in 0.2s; */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: rotate(45deg); */
+    /* transition: all 2s ease-in; */
+    animation-name: colorAnimate;
+    animation-duration: 0.25s;
+    /* animation-timing-function: ease-in; */
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorAnimate{
+    from{
+        /* background-color: aquamarine; */
+        left: 0px;
+        background-color: yellow;
+    }
+    to{
+        /* background-color: red; */
+        left: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+
+div:hover{
+    /* background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transform: scale(2);
+    transform: rotate(90deg);
+    transform: translate(200px,90px); */
+}
+
+/* div:active{
+    background-color: grey;
+} */

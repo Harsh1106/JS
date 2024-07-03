@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensions</title>
+    <style>
+        .box{
+            /* max height ka use krne se hm limit set kr skte h ki wo kitna expand krega like yaha 100px h to agr usko wo cross krega to ye apne ap overflow kr jaega aur agar ye overflow hme bachana ho to hm "overflow: scroll;" p set kr deg\nge tki hmara detail ussi box m reh jaye */
+            max-height: 100px; 
+            border: 1px solid black;
+            overflow: scroll;
+        }
+        .box1{
+            /* min height ka use krne se hm box ko min height provide kra dete h jo basically content k saath adjust ho jaata h apne aap */
+            margin: 10px;
+            min-height: 100px;
+            border: 1px solid black;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hello everyone Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat accusantium natus magni aperiam fugiat culpa vero minus. Cumque commodi omnis optio. Libero repudiandae repellat et facilis molestiae id nihil? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptas, modi sit, saepe atque dolor eos impedit mollitia tenetur excepturi, est officiis repellendus numquam! Facilis facere repellat vero architecto autem, eius consequatur. Sit et vel in quam, accusamus est. Qui voluptas illo maiores maxime laudantium tempora nisi ipsum expedita, sed, odio dolorum dolores nostrum minima atque dolor. Ipsum, vitae animi!</div>
+
+    <div class="box1">My new div Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt nobis atque eligendi nihil ea iusto consectetur laudantium ratione nam quas. Nesciunt quae eius ad consequatur illo, dolores minima saepe eligendi, ut fuga aspernatur. Nisi adipisci numquam laborum deleniti officiis pariatur accusamus excepturi distinctio sapiente qui vel optio, enim fuga explicabo Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ut minima optio ea eveniet sapiente laboriosam sint laborum voluptatibus ad at itaque odit id excepturi, perferendis impedit beatae eaque dicta facere inventore? Qui quae soluta quos minus laborum, sapiente, expedita nesciunt, ducimus maxime aliquid iste. Incidunt magnam sint illo corrupti adipisci neque libero impedit inventore.</div>
+</body>
+</html>

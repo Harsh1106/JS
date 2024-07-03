@@ -1,0 +1,101 @@
+body{
+    text-align: center;
+}
+
+/* div{ 
+    /* height: 100px;
+    width: 100px;
+    /* display: inline-block; 
+    /* border: 2px solid black; 
+} */
+
+#container{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: pink;
+}
+
+#box3{
+    background-color: darkkhaki;
+}
+
+#box4{
+    background-color: indianred;
+}
+
+#box5{
+    background-color: slateblue;
+}
+
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+}
+
+/* @media (width: 600px){
+    div{
+        background-color: red;
+    }
+}
+
+@media(max-width: 600px){
+    div{
+        background-color: green;
+    }
+}
+
+@media(min-width: 200px) and (max-width: 300px){
+    div{
+        background-color: red;
+    }
+} */
+
+@media (max-width: 300px){
+    div{
+        background-color: green ;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 400px){
+    div{
+        background-color: pink;
+    }
+}
+
+@media(min-width: 400px) and (max-width: 600px){
+    div{
+        background-color: red;
+    }
+}
+
+@media(min-width: 600px){
+    div{
+        background-color: blue;
+    }
+}

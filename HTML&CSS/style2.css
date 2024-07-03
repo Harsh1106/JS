@@ -1,0 +1,21 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black; 
+    margin: 5px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+#org{
+    background-color: rgb(255, 255, 255);
+}
+#wht{
+    background-color: rgb(0,0,0);
+}
+#grn{
+    background-color: green;
+}
+.p{
+    font-variant: small-caps;
+    text-emphasis: triangle red;
+}

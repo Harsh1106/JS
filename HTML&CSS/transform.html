@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            background-color: aqua;
+            /* transform: translate(100px, 25x); we  can do this seperately like this */
+            /* transform: translateX(100); */
+            /* transform: translate(50px); */
+        /* agar hm +ve angle denge to wo clock wise shift hoga aur whi -ve denge to anti clock wise shift hoga*/
+        /* transform: rotate(-45deg); */
+            margin: 200px;
+            /* scale jb use krenge to wo basically hmare element ko zoom kr dega aur jo second attribute h wo basically vertical scalling kr rha h aur jo first element h wo horizontal scalling kr rha hai point value bi use kr skte h aur respective axis k saath bhi ched chad kr skte h seperately like scaleX and scaleY */
+            transform: scale(2,3);
+
+            /* ye skew property basically tilt k liye use krte h like hme particular angle se tilt krana h element ko to hmlg skew keyword use krte */
+            transform: skew(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">ABCD</div >
+</body>
+</html>

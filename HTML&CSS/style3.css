@@ -1,0 +1,62 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    /* by default linear is in top to bottom */
+    background-image: linear-gradient(to bottom left, red, orange);
+    background-image: linear-gradient(90deg, red, blue, green);
+    /* applying shade */
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,255,1)); 
+    background-image: linear-gradient(orange, white,green);
+}
+.box1{
+    border: 1px solid black;
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    /* by default radial gradient is in ellipse shape */
+    background-image: radial-gradient(red, blue);
+    background-image: radial-gradient(red, green);
+    background-image: radial-gradient(circle, red, yellow, black);
+    /* we can provide colors on the basis of percentage */
+    background-image: radial-gradient(yellow 5%, orange 10%, red 50%);
+}
+.box2{
+    border: 1px solid black;
+    height: 150px;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    text-shadow: 3px 3px;
+    background-image: conic-gradient(orange, white, green);
+}
+h1{
+    text-shadow: 3px 3px 3px red;
+    /* this will create blur effect in text */
+    text-shadow: 3px 3px 3px red, 5px 5px 5px green;
+    /* agar hm pehla wla 5px ko change kr k 50px kr denge to hme dkhne ko milega ki hmara green shadow wla part shift ho gya hai jisse hmlg horizontal distance wrt text kehte h */
+    /* aur yehi same cheez agar hm beech wle 5px k saath kr de to wo hme vertical distance dikhayegi */
+    /* aur teesra wla blur effect bht jda bdha dega */
+
+}
+.box3{
+    background-color: aqua;
+    width: 200px;
+    height: 180px;
+    box-shadow: -10px -10px 15px green, 10px 10px 15px brown;
+    color: red;
+}
+.exp{
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+    /* box-shadow: 0 10px 0 0 red, -10px 0 0 0 red, -10px 0 0 0 red, 10px 0 0 0 red; */
+    /* margin: 50px; */
+}
+.exp.no-spread{
+    box-shadow: 10px 10px 5px black;
+}
+
+.exp.with-spread{
+    box-shadow: 10px 10px 5px 10px black;
+}
