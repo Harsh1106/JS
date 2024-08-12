@@ -114,10 +114,41 @@
 // console.log(obj.consturctor);
 // functions are also objects
 
-let a = {
-    value: 10
-};
-let b = a;
-a.value++;
-console.log(a.value);
-console.log(b.value);
+// let a = {
+//     value: 10
+// };
+// let b = a;
+// a.value++;
+// console.log(a.value);
+// console.log(b.value);
+
+function User(username, loginCount, isLoggedIn){
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isLoggedIn = isLoggedIn;
+    this.greeting = function(){
+        console.log(`Welcome ${this.username}`);
+    }
+
+    return this; //by default it is written(implicitly)
+}
+
+// const userOne = User("Harsh", 12, true); //the value will get overriden by the values of userTwo
+// const userTwo = User("Drake", 14, true);
+
+const userOne = new User("Harsh", 12, true);
+const userTwo = new User("Drake", 14, false);
+// console.log(userOne.constructor); //[Function: User]
+// console.log(userTwo);
+
+function Car(make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+}
+
+const auto = new Car('Honda', 'Accord', 1998);
+//will check that the object does have the instance of Car or not
+console.log(auto instanceof Car); //true
+console.log(auto instanceof Object); //true
+
